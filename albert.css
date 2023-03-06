@@ -1,0 +1,69 @@
+body{
+    margin: 0px;
+    padding: 0px;
+   background-image: url(bag.jpg);
+    scroll-behavior: smooth;
+    font-family: sans-serif,Arial, Helvetica, sans-serif;
+}
+.border {
+    border: var(--bs-border-width) var(--bs-border-style) rgb(238 119 20)!important;  
+}
+.nav-item{
+    margin: 8px;
+}
+.nav-item:hover{
+    background-color:transparent;
+    color:white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px black;
+}
+.navbar-toggler-icon
+{  
+    position: relative;
+    right: 2px;
+    left: 18px;
+    font-size: 16px;
+  background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28236, 79, 32, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+}
+.navbar-toggler
+{   border: 1px solid rgb(230, 97, 48);
+    width: 110px;
+    border: 2px solid rgb(238, 109, 62);
+    border-radius: 30%;
+    font-size: 10px;
+    height: 40px;
+
+}
+.navbar-toggler p{
+     color: rgb(235, 98, 48);
+    position:relative;
+    bottom: 20px;
+    right: 20px;
+    font-size:16px;
+}.col-md-4 img{
+    height: 400px;
+    transition: 0.5s;
+    border: 2px solid  rgb(235, 98, 48);
+}.col-md-4 {
+    overflow: hidden;
+}.card{
+    border: 2px solid rgb(235, 98, 48); 
+}.col{
+    border: 2px solid rgb(235, 98, 48)
+}form{
+    width: 1000px;
+    position: relative;
+    left: 100px;
+}#cardfooter{
+    background-color: rgb(235, 98, 48);;
+}#carouselExampleDark{
+    position: relative;
+    top: 50px;
+}#facebook:hover{
+    transform: scale(1.3,1.3);
+    
+}#facebook{
+        transition: 0.5s;
+        overflow: hidden;
+}
+
