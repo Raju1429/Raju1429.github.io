@@ -2,209 +2,780 @@
 <html lang="en">
 
 <head>
-  <title>Title</title>
- 
+  <link rel="icon" id="favicon" href="gallery123.png" type="image/png" >
+  <title>Midwest Energy Site</title>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
 
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="butterfly1.css">
+    <link rel="stylesheet" href="tourism_Website.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 
+   <style>
+    /*footer*/
+.col_white_amrc { color:white;}
+footer { width:100%; background-color:rgb(35,102,102); min-height:250px; padding:10px 0px 25px 0px ;}
+.pt2 { padding-top:40px ; margin-bottom:20px ;}
+footer p { font-size:13px; color:white; padding-bottom:0px; margin-bottom:8px;}
+.mb10 { padding-bottom:15px ;}
+.footer_ul_amrc { margin:0px ; list-style-type:none ; font-size:14px; padding:0px 0px 10px 0px ; }
+.footer_ul_amrc li {padding:0px 0px 5px 0px;}
+.footer_ul_amrc li a{ color:white;}
+.footer_ul_amrc li a:hover{ color:#fff; text-decoration:none;}
+.fleft { float:left;}
+.padding-right { padding-right:10px; }
+
+.footer_ul2_amrc { list-style-type:none; padding:0px;}
+.footer_ul2_amrc li p { display:table; }
+.footer_ul2_amrc li a:hover { text-decoration:none;}
+.footer_ul2_amrc li i { margin-top:5px;}
+
+.bottom_border { border-bottom:1px solid #323f45; padding-bottom:20px;}
+.foote_bottom_ul_amrc {
+	list-style-type:none;
+	padding:0px;
+	display:table;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-bottom: 10px;
+	margin-left: auto;
+}
+.foote_bottom_ul_amrc li { display:inline;}
+.foote_bottom_ul_amrc li a { color:#999; margin:0 12px;}
+
+.social_footer_ul { display:table; margin:15px auto 0 auto; list-style-type:none;  }
+.social_footer_ul li { padding-left:20px; padding-top:10px; float:left; }
+.social_footer_ul li a { color:#CCC; border:1px solid #CCC; padding:8px;border-radius:50%;}
+.social_footer_ul li i {  width:20px; height:20px; text-align:center;}
+    .dropdown-item {
+  color: #fff;
+}
+
+.dropdown .dropdown-menu {
+  display: none;
+  background: #212529;
+}
+.dropdown:hover>.dropdown-menu, 
+.dropend:hover>.dropdown-menu {
+  display: block;
+  margin-top: .1em;
+  margin-left: .1em;
+}
+@media screen and (min-width:769px) {
+  .dropend:hover>.dropdown-menu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+  }
+  .dropend .dropdown-toggle {
+    margin-left: .5em;
+  }
+  .nav-item{
+    color: white;
+  }
+  
+}
+
+   </style>
+      
+      
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg  fixed-top navbar-light   border border-1 border-top-0 border-start-0 border-end-0" id="navbarr" style="background-color: #b3bac0;">
-        <div class="container-fluid" >
-          <a class="navbar-brand" href="index.html#"><img src="image-title.png" alt="" width="200px" height="70px"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            <p>MENU</p>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav" style="--bs-scroll-height: 100px; margin:1px;  position: relative; left:100px; margin-top:30px;">
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:rgb(238,119,20); margin-top:1px;">
-                  Shop by Age <i class="fa-solid fa-child"></i>
-                </a>
-                
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                
-                        <li><a class="dropdown-item" href="butterfly2.html">Age 1.5+</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="butterfly2.html">Age 4+</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="butterfly2.html">Age 6+</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="butterfly2.html">Age 9+</a></li>
-                      
-                </ul>
-              </li>
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dar fixed-top" style="background-color:rgb(35,102,102);" id="home2">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="logo.png" alt="" style="height: 40px;" id="home3"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html" style="margin-left: 60px; font-family: 'Times New Roman', Times, serif; font-size: larger;" id="line"><i class="fa-solid fa-house"></i> Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery" style="margin-left: 60px; font-family: 'Times New Roman', Times, serif;  font-size: larger;" id="line">About</a> 
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-left: 60px; font-family: 'Times New Roman', Times, serif;  font-size: larger;"id="line"><i class="fa-solid fa-microchip"></i> Technologies</a>
+
+            <ul class="dropdown-menu">
             
-              <li class="nav-item">
-                <a class="nav-link" href="butterfly2.html" style="color:rgb(238,119,20);">Teacher <i class="fa-sharp fa-solid fa-person-chalkboard"></i></a>
-              </li>
-              
-              <li class="nav-item">
-                <a class="nav-link" href="#" style="color:rgb(238,119,20);"><i class="fa-solid fa-function"></i> Multiplication Tables </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" style="color:rgb(238,119,20);">How stuff works</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"  style="color:rgb(238,119,20);">
-                  Parenting Tips
+           
+              <li class="nav-item dropend">
+                <a class="nav-link dropdown-toggle" href="products page.html" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-left: 60px;">
+                  BMS
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="butterfly2.html">How to inspire young kids?</a></li>
-                  <li>
-                    <hr class="dropdown-divider">
+
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="products page.html">High Voltage Slave Board</a></li>                      
+                  <li><a class="dropdown-item" href="products page.html">Low Voltage Slave Board</a></li>                      
+                 
+
+                  <li class="nav-item dropend">
+
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Service Name
+                    </a>
+
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Service Name</a></li>
+                    
+                      <li class="nav-item dropend">
+
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Service Name
+                        </a>
+                        
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Service Name</a></li>
+                                                                               
+                        </ul>
+                      </li>
+                    </ul>
                   </li>
-                  <li><a class="dropdown-item" href="#">Hybrid Animal Puzzles</a></li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li><a class="dropdown-item" href="#">Maps</a></li>
+                  
                 </ul>
               </li>
-            
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"  style="color:rgb(238,119,20);">
-                  Category
+              <li class="nav-item dropend">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-left: 60px;">
+                  Energy solutions
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <li><a class="dropdown-item" href="#">General Blogs</a></li>
-                    <li>
-                        <hr class="dropdown-divider">
+
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="products page.html">High Voltage Slave Board</a></li>                      
+                  <li><a class="dropdown-item" href="products page.html">Low Voltage Slave Board</a></li>                      
+                 
+
+                  <li class="nav-item dropend">
+
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Service Name
+                    </a>
+
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Service Name</a></li>
+                 
+
+                      <li class="nav-item dropend">
+
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Service Name
+                        </a>
+                        
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Service Name</a></li>
+                                                                              
+                        </ul>
                       </li>
-                    <li><a class="dropdown-item" href="#">Events at Butterfly Edufields</a></li>
-                    <li>
-                        <hr class="dropdown-divider">
-                      </li>
-                    <li><a class="dropdown-item" href="#">Great Scientists | Contribution to Science</a></li>
-                    <li>
-                        <hr class="dropdown-divider">
-                      </li>
-                    <li><a class="dropdown-item" href="#">Concept Maps</a></li>
-                    <li>
-                        <hr class="dropdown-divider">
-                      </li>
-                    <li><a class="dropdown-item" href="#">How To Inspire Your Young Kids?</a></li>
-                    <li>
-                        <hr class="dropdown-divider">
-                      </li>
-                    <li><a class="dropdown-item" href="#">Activities For Creative Engagement</a></li>
-                    <li>
-                        <hr class="dropdown-divider">
-                      </li>
-                    <li><a class="dropdown-item" href="#">Cultural Activities in Butterfly Edufields</a></li>
+                    </ul>
+                  </li>
                 </ul>
               </li>
-        
+              <li class="nav-item dropend">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-left: 60px;">
+                  Range extenders
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">High Voltage Slave Board</a></li>                      
+                  <li><a class="dropdown-item" href="#">Low Voltage Slave Board</a></li>                      
+                 
+
+                  <li class="nav-item dropend">
+
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Service Name
+                    </a>
+
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Service Name</a></li>
+                      <li><a class="dropdown-item" href="#">Service Name</a></li>
+                      <li><a class="dropdown-item" href="#">Service Name</a></li>
+
+                      <li class="nav-item dropend">
+
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Service Name
+                        </a>
+                        
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Service Name</a></li>
+                          <li><a class="dropdown-item" href="#">Service Name</a></li>
+                          <li><a class="dropdown-item" href="#">Service Name</a></li>
+                          <li><a class="dropdown-item" href="#">Service Name</a></li>                                                           
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropend">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-left: 60px;">
+                  High Power Cells
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">High Voltage Slave Board</a></li>                      
+                  <li><a class="dropdown-item" href="#">Low Voltage Slave Board</a></li>                      
+                 
+
+                </ul>
+              </li>
             </ul>
-          </div>
-        </div>
-      </nav>
-      <br>
+          </li>
 
-        <div class="card-header" id="headerline">
-           <h2 style="font-size:30px;">Category: Great Scientists | Contributions to Science</h2></div>
-      <div class="card-group" >
-        <div class="card" id="card0">
-          <img src="andre_marie.jpg" class="card-img-top" alt="..." style="border-radius: 13px 13px 0px 0px;">
-          <div class="card-body">
-            <h4 id="header"><strong>Great Scientists|Contributions to Science</strong></h4>
-            <h4 class="card-title"><strong>Andre Marine Ampere | Contributions in Science</strong></h4>
-            <br>
-            <p class="card-text"><a href="adrebutterfly.html" style="color:rgb(238,119,20); text-decoration: none;"><strong>READ MORE<i class="fa-solid fa-arrow-right"></i></strong></a></p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">No Comments</small>
-          </div>
-        </div>
-        <div class="card" id="card1">
-          <img src="alb.jpg" class="card-img-top" alt="..." style="border-radius: 13px 13px 0px 0px;" >
-          <div class="card-body">
-            <h4 id="header"><strong>Great Scientists|Contributions to Science</strong></h4>
-            <h4 class="card-title"><strong>Albert Einstein | Contributions in Science</strong></h4>
-            <br>
-            <p class="card-text"><a href="albert.html" style="color:rgb(238,119,20); text-decoration: none;"><strong>READ MORE<i class="fa-solid fa-arrow-right"></i></strong></a></p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">No Comments</small>
-          </div>
-        </div>
-        <div class="card" id="card2">
-          <img src="ant.jpg" class="card-img-top" alt="..." style="border-radius: 13px 13px 0px 0px;" >
-          <div class="card-body">
-            <h4 class="card-title"><strong>Antoine Lavoiser | Contributions in Science</strong></h4>
-            <h4 id="head1"><strong>Great Scientists|Contributions to Science</strong></h4>
-            <br>
-            <p class="card-text"><a href="antonie.html" style="color:rgb(238,119,20); text-decoration: none;"><strong>READ MORE<i class="fa-solid fa-arrow-right"></i></strong></a></p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">No Comments</small>
-          </div>
-        </div>
+          <li class="nav-item">
+            <a class="nav-link"style="margin-left: 60px; font-family: 'Times New Roman', Times, serif;  font-size: larger;" id="line">Portfolio</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact form final 2.html" style="margin-left: 60px; font-family: 'Times New Roman', Times, serif;font-size: larger;" id="line">Contact Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-left: 60px; font-family: 'Times New Roman', Times, serif;  font-size: larger;"  id="line" >Products</a>
+
+            <ul class="dropdown-menu">
+             
+              <li class="nav-item dropend">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-left: 60px; font-family: 'Times New Roman', Times, serif;">
+                  BMS
+                </a>
+
+                <ul class="dropdown-menu">
+                  
+                  <li class="nav-item dropend">
+
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Service Name
+                    </a>
+
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Service Name</a></li>
+                      <li><a class="dropdown-item" href="#">Service Name</a></li>
+                      <li><a class="dropdown-item" href="#">Service Name</a></li>
+
+                      
+                    </ul>
+                   
+                </ul>
+              </li>
+              <li class="nav-item dropend">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-left: 60px; font-family: 'Times New Roman', Times, serif;">
+                  battery packs
+                </a>
+
+                <ul class="dropdown-menu">
+                  
+                  <li class="nav-item dropend">
+
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Service Name
+                    </a>
+
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Service Name</a></li>
+                      <li><a class="dropdown-item" href="#">Service Name</a></li>
+                      <li><a class="dropdown-item" href="#">Service Name</a></li>
+
+                      
+                    </ul>
+                   
+                </ul>
+              </li>
+              <li class="nav-item dropend">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-left: 60px; font-family: 'Times New Roman', Times, serif;">
+                 Engineering Services
+                </a>
+
+                <ul class="dropdown-menu">
+                  
+                  <li class="nav-item dropend">
+
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Service Name
+                    </a>
+
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Service Name</a></li>
+                      <li><a class="dropdown-item" href="#">Service Name</a></li>
+                      <li><a class="dropdown-item" href="#">Service Name</a></li>
+
+                      
+                    </ul>
+                   
+                </ul>
+              </li>
+            </ul>
+          </li>
+         
+          <li class="nav-item">
+            <a class="nav-link"style="margin-left: 60px; font-family: 'Times New Roman', Times, serif;  font-size: larger;" id="line" href="careers.html">Careers</a>
+          </li>
+          
+    
       </div>
-      <br><br>
-      
-
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-          <div class="card h-100">
-            
-            <div class="card-body" id="card-bodyf">
-              <h5 class="card-title">Adress</h5>
-              <p class="card-text" style="color:white">Adress:Amsri eden Square<br>5th floor,office No.7, St johnson<br> Road bhagyanagar Colony<br>Beside Apollo Hopsital,<br>secunderabad,telangana-50003</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted" style="color:grey;">Connect@ButterflyEdufields.com</small>
-            </div>
-          </div>
+    </div>
+  </nav>
+   
+ <section id="line5">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-        <div class="col">
-          <div class="card h-100">
-           
-            <div class="card-body" id="card-bodyf">
-              <h5 class="card-title">MENU</h5>
+        <div class="carousel-inner" id="buttons">
+          <div class="carousel-item active">
+            <img src="gallery12.jpg" class="d-block w-100" alt="..." class="img-fluid" style="height:550px;">
+            <div class="carousel-caption" style="margin-right: 600px; margin-top: 200px; animation:alternate-reverse;" >
               
-              <p class="card-text" > <a href="" style="color:white; text-decoration:none ;">Get Support</a><br>
-                <a href=""style="color:white; text-decoration:none;">Courses</a><br>
-                <a href=""style="color:white; text-decoration:none ;">Connect With Us</a><br>
-                <a href=""style="color:white; text-decoration:none ;">science project ideas</a></p>
+                
+             <a href=https://www.midwestenergy.in> <button class="btn btn-teal" style="font-family: 'Times New Roman', Times, serif; margin-right: 10px;">Read More </button></a>
             </div>
-            <div class="card-footer">
-              <small class="text-muted" style="color:grey;"> <a href="#headerline"><button  style=" height: 35px; margin-left: 130px;" type="button" class="btn btn-primary">HOME <i class="fa-solid fa-house"></i></button></a></small>
+          </div>
+          <div class="carousel-item">
+            <img src="Capture.png" class="d-block w-100" alt="..." style="height:550px;">
+            <div class="carousel-caption" style="margin-left: 100px; margin-top: 200px; animation:alternate-reverse;" >
+                <h5 class="display-4" style="margin-left: 350px;"></h5><br><br><br>
+                <p class="lead" style=" width: 800px;"></p>
+               
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="54.jpg" class="d-block w-100" alt="..." style="height:550px;">
+            <div class="carousel-caption" style="margin-right: 300px; margin-top: 200px; animation:alternate-reverse;" >
+                <h5 class="display-4" style="color: grey;"></h5>
+                <p class="lead" style="width: 800px; color:black;">.</p>
+               
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+ </section>  
+  <section class="p-3 bg-teal text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+        <span style="color:rgb(9, 12, 12); font-family:'Times New Roman', Times, serif; font-size: x-large;" id="search1">Business verticals</span></h5>
+          <p class="lead" style="font-family: 'Times New Roman', Times, serif;">Midwest is developing innovative solutions to provide the required power and energy on time in order to alleviate the twin challenges of Range and Charge anxiety. The solutions include but are not limited to energy storage, management, transfer and onboard generation.</p>
+           <div class="row">
+            <div class="col-md-6">
+              <form action="">
+                 
+                  <marquee behavior="" direction="" style="font-family: 'Times New Roman', Times, serif;">  Welcome to Our Website!  Stay Updated with the Latest News and Offers.  Check Back Often for More Updates!
+                  </marquee>
+                  
+                        <input type="text" id="searchInput" placeholder="Search..." class="form-control mr-sm-2" type="search" aria-label="Search" style="height: 40px;">
+                        <div id="searchResults"></div>
+
+                        
+                  
+              </form>
+            </div>
+           </div>
+        </div>
+      </div>
+    </div>
+  </section>  
+  <section class="bg-light p-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card text-center mt-3" style="box-shadow: 0px 0px 2px teal;">
+            <div class="card-body">
+             
+              <i class="fa-solid fa-cart-shopping fa-4x" style="color: rgb(35,102,102);"></i>
+              <p class="h2"><b>Mining</b></p>
+              <p class="lead" style="font-family: 'Times New Roman', Times, serif">Mining companies are ambitiously aiming for net zero emissions throughout their operations. Midwest's core objective is to support this endeavor by providing innovative solutions rooted in the integration of emerging technologies. By fostering collaboration and promoting practices, Midwest strives to drive meaningful change in the mining sector, paving the way towards a greener future..</p>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card h-100">
-           
-            <div class="card-body" id="card-bodyf">
-              <h5 class="card-title">Social Media</h5>
-              <p class="card-text"><button type="button" class="btn btn-danger btn-floating">
-                <a href="https://www.youtube.com/channel/UCFhqo1FAq2OBbdIWLPx7xTQ"> <i class="fab fa-youtube" style="color: white;" id="facebook"></i></a>
-                   </button>
-             <button type="button" class="btn btn-primary btn-floating">
-              <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=966242223397117&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fsharer%2Fsharer.php%3Fu%3Dhttps%253A%252F%252Fbutterflyfields.com&cancel_url=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Fclose_window%2F%3Fapp_id%3D966242223397117%26connect%3D0%23_%3D_&display=popup&locale=en_GB"> <i class="fab fa-facebook" style="color: white;" id="facebook"></i></a>
-             </button>
-             <button type="button" class="btn btn-dark btn-floating">
-               <a href="https://www.instagram.com/accounts/login/?next=/butterflyedufieldsindia/"><i class="fab fa-instagram"  style="color: white;"id="facebook"></i></a>
-             </button>
-             <button type="button" class="btn btn-primary btn-floating">
-               <a href="https://twitter.com/intent/tweet?text=Butterfly%20EduFields&url=https://butterflyfields.com"> <i class="fab fa-twitter" style="color: white;" id="facebook"></i></a>
-              </button></p>
+        <div class="col-md-4">
+          <div class="card text-center mt-3" style="box-shadow: 0px 0px 2px teal;">
+            <div class="card-body">
+              <i class="fa fa-building fa-4x" style="color: rgb(35,102,102);"></i>
+              <p class="h2"><b>Energy Storage</b></p>
+              <p class="lead" style="font-family: 'Times New Roman', Times, serif" id="energy">Energy Storage
+                The accelerated adoption of renewable energy is unsustainable without addressing critical issues such as grid stability and energy balancing. As renewable energy's contribution to the grid increases, these challenges become more pronounced, hindering further progress. Energy storage systems are expected to play a pivotal role in mitigating these issues.</p>
             </div>
-            <div class="card-footer">
-              <small class="text-muted"style="color:grey;">  +91234567XXX Connect@ButterflyEdufields.com</small>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center mt-3" style="box-shadow: 0px 0px 2px teal;">
+            <div class="card-body">
+              <i class=></i>
+              <i class="fa-solid fa-bus fa-4x" style="color: rgb(35,102,102);"></i>
+              <p class="h2"><b>Automotive</b></p>
+              <p class="lead" style="font-family: 'Times New Roman', Times, serif">Electrification of public transport, particularly in urban areas, presents an opportunity to achieve multiple objectives such as low-carbon footprint, cleaner air, environmental upgradation, creation of jobs, reduced transport costs, and ultimately, improved public health. Embracing this transition can lead to a transformative impact on urban living standards and environmental sustainability.</p>
             </div>
+          </div>
+        </div>
+        <div class="card" style="width: 82rem;margin-top: 20px;">
+          <div class="card-body">
+            <h5 class="card-title" style="font-family: 'Times New Roman', Times, serif;"><b></b>Midwest Energy's Mission: Decarbonizing Mobility for Environmental Health</b></h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary"></h6>
+            <p class="card-text" style="font-family: 'Times New Roman', Times, serif; font-size: larger;">A report published by WHO with its startling remark that 21 out of the 30 most polluted cities in the world are located in India. The above statement speaks volumes on the problem in terms of level of emissions, seriousness of pollution, extent of environmental damage and its consequent injury to public health.
+
+              Vehicular pollution is one the biggest contributors to this pollution .The ICE vehicles are both burdensome and harmful to both individual users as well as collectively to the society. The continuation of this phenomenon is neither desirable nor advisable and calls for an effective shift to a better option.and Midwest energy’s objective is to deca</p>
+            <a href="articles 3.html" class="card-link" style="font-family: 'Times New Roman', Times, serif; color: blue;"><b>Articles</b></a>
+            <a href="articles 3.html" class="card-link" style="font-family: 'Times New Roman', Times, serif; color: blue;"><b>Certificates</b></a>
           </div>
         </div>
       </div>
+    </div>
+  </section>  
+  
+  <section class="p-3">
+    <div class="container">
+      <div class="row text-center">
+      <h5 class="display-4" id="gallery"> <span style="color:rgb(35,102,102);" id="visitingspots">Meet Our</span>Team</h5>
+      
+     
+    </div>
+    <div class="row" >
+      <div class="col-md-4 ">
+        <div class="card" id="image">
+          <img src="team-img-1 (1).jpg" alt="" class="img-fluid" style="height: 300px;">
+          <div class="card-body">
+            <h3 class="carad-title" style="font-family: 'Times New Roman', Times, serif;">K.Raghava Reddy</h3>
+            <p class="card-text" style="font-family: 'Times New Roman', Times, serif;">K. Raghava Reddy serves as the chairman of Midwest Energy Pvt Ltd, the founder of which is Midwest Granite. Under his leadership, Midwest Energy Pvt Ltd has emerged as a key player in the energy sector, leveraging innovative solutions to meet the evolving demands of the industry. Reddy's strategic vision has propelled the company towards sustainable growth, establishing it as a leader in renewable energy and technological integration. With a commitment to excellence, Reddy continues to drive Midwest Energy Pvt Ltd towards greater success and impact in the energy landscape.</p>
+            <a href="readmore.html"><button class="btn btn-teal btn-sm text-white">Read More</button></a>
+          </div>
+        </div>
+        
+      </div>
+      <div class="col-md-4 ">
+        <div class="card" id="image">
+          <img src="team-img-2.jpg" alt="" class="img-fluid" style="height: 300px;">
+          <div class="card-body">
+            <h3 class="carad-title" style="font-family: 'Times New Roman', Times, serif;">K.Sowmya</h3>
+            <p class="card-text"style="font-family: 'Times New Roman', Times, serif;">As CEO of Midwest Energy Pvt Ltd, K. Soumya Kukreti leads with innovation and strategic prowess, driving the company's growth in the energy sector. With a deep understanding of renewable energy and technological integration, she propels Midwest Energy towards sustainable success. Soumya fosters a culture of collaboration and forward-thinking, ensuring the company remains at the forefront of industry trends. Her commitment to excellence and corporate responsibility shapes Midwest Energy's positive impact on both the environment and communities.</p>
+            <a href="https://open.spotify.com/episode/2oV0FMrAMEPJkmtNXsJXZI"><button class="btn btn-teal btn-sm text-white">Read More</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 ">
+        <div class="card" id="image">
+          <img src="team-img-3.jpg" alt="" class="img-fluid" style="height: 300px;">
+          <div class="card-body">
+            <h3 class="carad-title" style="font-family: 'Times New Roman', Times, serif;">Dr Laxminarayana </h3>
+            <p class="card-text" style="font-family: 'Times New Roman', Times, serif;">Dr. Laxminarayana Chikatamarla, Midwest Energy's esteemed tech advisor, uses his engineering background to guide the company in renewable energy innovations. His expertise shapes strategic, driving the company's path towards sustainability and growth.Dedicated to pushing limitsDedicated to pushing limits Dr. Chikatamarla's respected status in the field highlights his key role in Midwest Energy's future. Dedicated to pushing limits, he propels the company towards a greener, more sustainable future, ensuring its position as a leader in renewable energy solutions.</p>
+            <a href="readmore.html"><button class="btn btn-teal btn-sm text-white">Read More</button></a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <br><br>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card" id="image">
+          <img src="team-img-4.jpg" alt="" class="img-fluid" style="height: 300px;">
+          <div class="card-body">
+            <h3 class="carad-title" style="font-family: 'Times New Roman', Times, serif;">Dr Gajbir Singh</h3>
+            <p class="card-text" style="font-family: 'Times New Roman', Times, serif;">Dr. Gajbir Singh leads Engineering & Design, orchestrating innovative solutions and fostering excellence in implementation. His meticulous approach and technical acumen drive efficiency and quality within the organization. Dr. Singh's commitment to excellence elevates capabilities, contributing to the company's success. As a key figure, he plays a vital role in advancing technology and fostering growth..</p>
+            <a href="readmore.html"><button class="btn btn-teal btn-sm text-white">Read More</button></a>
+          </div>
+        </div>
+        
+      </div>
+      <div class="col-md-4 ">
+        <div class="card" id="image">
+          <img src="17.jfif" alt="" class="img-fluid" style="height: 300px;">
+          <div class="card-body">
+            <h3 class="carad-title" style="font-family: 'Times New Roman', Times, serif;">Stanley Charles Vice President </h3>
+            <p class="card-text" style="font-family: 'Times New Roman', Times, serif;">Stanley Charles, Vice President of Midwest Energy Pvt Ltd, is a dynamic leader skilled in entrepreneurship, business strategy, and new business development. With expertise in marketing, online advertising, and e-commerce, he drives effective online marketing strategies. Stanley excels in social media marketing, SEO, and digital marketing, contributing to business growth. His management prowess ensures success in the automotive sector, including electric vehicles.</p>
+
+            <a href="readmore.html"><button class="btn btn-teal btn-sm text-white">Read More</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 ">
+        <div class="card" id="image">
+          <img src="123321.jpeg" alt="" class="img-fluid" style="height: 300px;">
+          <div class="card-body">
+            <h3 class="carad-title">Nitin Sutar Team Lead</h3>
+            <p class="card-text">Nitin Sutar, Technical Lead at Midwest Energy Pvt Ltd, drives CCUS initiatives and leads solar projects with a focus on low-carbon technologies. His expertise in new business development and strategic planning ensures effective project management. Nitin excels in problem-solving and project design, utilizing software like SolidWorks and CATIA. With proficiency in ANSYS and Creo Parametric, he ensures timely delivery and streamlined operations..</p>
+            <a href="readmore.html"><button class="btn btn-teal btn-sm text-white">Read More</button></a>
+          </div>
+        </div>
+        
+      </div>
+    </div><br>
+    <div class="row ">
+      <div class="col text-center">
+        <a href="email.html"> <button class="btn btn-dark btn-lg" style="font-family: 'Times New Roman', Times, serif;" ><i class="fa fa-play"></i> Battery pack Customization ?</button></a>
+      </div>
+    </div>
+    </div>
+  </section> 
+   
+  <section class="p-3 bg-teal text-white text-center">
+      <div class="conatainer">
+        <div class="row">
+          <div class="col" id="icons">
+           <h1>Follow Midwest Energy Pvt ltd</h1>
+           <p>follow us on these social media platforms for updates and news.</p>
+           <a   href="https://www.facebook.com/login.php?skip_api_login=1&api_key=966242223397117&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fsharer%2Fsharer.php%3Fu%3Dhttps%253A%252F%252Fbutterflyfields.com&cancel_url=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Fclose_window%2F%3Fapp_id%3D966242223397117%26connect%3D0%23_%3D_&display=popup&locale=en_GB"><i class="fa-brands fa-square-facebook fa-3x m-2"></i></a>
+          <a  href="https://www.youtube.com/"> <i class="fa-brands fa-youtube fa-3x m-2"></i></a>
+          <a  href="https://twitter.com/intent/tweet?text=Butterfly%20EduFields&url=https://butterflyfields.com"> <i class="fa-brands fa-twitter fa-3x m-2" style="text-decoration: none;"></i></a>
+           <a  href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-3x m-2"></i></a>
+          </div>
+        </div>
+      </div>
+
+  </section>
+    
+  <section class="p-3">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col">
+          <h5 class="display-4">
+            <span style="color:rgb(35,102,102); font-family: 'Times New Roman', Times, serif;" id="gallery">MidWest </span> Energy
+          </h5>
+          <p style="font-family: 'Times New Roman', Times, serif;">"Crafted with precision and passion, our products exemplify excellence in manufacturing."</p>
+        </div>
+      </div>
+      <div class="row mt-4 ">
+        <div class="col-md-3" id="image">
+          <img src="1 (2).png" alt="" class="img-fluid">
+        </div>
+        <div class="col-md-3 " id="image">
+          <img src="1 (2).png" alt=""  class="img-fluid">
+        </div>
+        <div class="col-md-3 " id="image">
+          <img src="1 (3).png" alt=""  class="img-fluid">
+        </div>
+        <div class="col-md-3 " id="image">
+          <img src="1 (4).png" alt=""  class="img-fluid">
+        </div>
+      </div>
+      <div class="row mt-4 ">
+        <div class="col-md-3" id="image">
+          <img src="1 (2).png" alt="" class="img-fluid">
+        </div>
+        <div class="col-md-3 " id="image">
+          <img src="1 (2).png" alt=""  class="img-fluid">
+        </div>
+        <div class="col-md-3 " id="image">
+          <img src="1 (3).png" alt=""  class="img-fluid">
+        </div>
+        <div class="col-md-3 " id="image">
+          <img src="1 (4).png" alt=""  class="img-fluid">
+        </div>
+      </div>
+      <div class="row mt-4 ">
+        <div class="col-md-3" id="image">
+          <img src="1 (2).png" alt="" class="img-fluid">
+        </div>
+        <div class="col-md-3 " id="image">
+          <img src="1 (2).png" alt=""  class="img-fluid">
+        </div>
+        <div class="col-md-3 " id="image">
+          <img src="1 (3).png" alt=""  class="img-fluid">
+        </div>
+        <div class="col-md-3 " id="image">
+          <img src="1 (4).png" alt=""  class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+    <section class="p-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+              <div class="card">
+                  <div class="card-body bg-teal text-center text-white">
+                    <i class="fa fa-envelope fa-4x"></i>
+                    <h2 style="font-family: 'Times New Roman', Times, serif;">Contact For Booking</h2>
+                    <p class="lead" style="font-family: 'Times New Roman', Times, serif;">Midwest Energy Pvt Ltd is a leading electric vehicle and battery manufacturer. Please feel free to schedule a meeting with us at our location.</p>
+                  </div>
+              </div>
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <h3 style="font-family: 'Times New Roman', Times, serif;">Location</h3>
+                </li>
+                <li class="list-group-item" style="font-family: 'Times New Roman', Times, serif;">
+              Midwest Energy Pvt ltd
+                </li>
+                <li class="list-group-item" style="font-family: 'Times New Roman', Times, serif;">
+             Banjara Hills
+                </li>
+                <li class="list-group-item" style="font-family: 'Times New Roman', Times, serif;">
+                Hyderabad
+                </li>
+              </ul>
+          </div><br>
+          <div class="col-md-6 ">
+                  <div class="card ">
+                    <div class="card-header bg-teal">
+                        <h3 class="text-white" id="contactus" style="font-family: 'Times New Roman', Times, serif;">Contact Us</h3>
+                    </div>
+                    <div class="card-body bg-light">
+                 <form  action="https://formsubmit.co/rajleo468@gmail.com" method="POST">
+                <label for="" style="font-family: 'Times New Roman', Times, serif;">Name</label>
+                <input type="text" name="name" class="form-control" placeholder="Name"required>
+                 <span style="color: red;" id="error"></span>
+                <br>
+                 <label for="" style="font-family: 'Times New Roman', Times, serif;">Mobile number</label>
+                 <input type="text"  name="number" class="form-control" placeholder="Number"required>
+                  <span style="color: red;" id="numbererror"></span><br>
+                  <label for="" style="font-family: 'Times New Roman', Times, serif;">Email</label>
+                  <input type="text" name="email" class="form-control" placeholder="email" required>
+                   <span style="color: red;" id="emailerror"></span><br>
+                   <label for="" style="font-family: 'Times New Roman', Times, serif;">Query Regarding Battery Pack ?</label>
+                   <input type="text" name="message" class="form-control" required>
+                    <span style="color: red;" id="emailerror1"></span><br>
+                <input type="submit" value="Compose" style="background-color: teal; width:100%; height: 45px;">
+                <br>
+              </form>
+                    </div>
+                  </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" style="color:rgb(35,102,102);">
+      <div class="container bottom_border">
+      <div class="row">
+      <div class=" col-sm-4 col-md col-sm-4  col-12 col">
+      <h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>
+      <!--headin5_amrc-->
+      <p class="mb10">
+        Midwest Energy: Manufacturer of electric vehicle batteries and BMS systems, ensuring sustainable energy solutions for the automotive industry.</p>
+      <p><i class="fa fa-location-arrow"></i> 9878/25 sec 9 Banjara Hills 35 </p>
+      <p><i class="fa fa-phone"></i>  +91-9999878398  </p>
+      <p><i class="fa fa fa-envelope"></i> info@midwestenergy.in  </p>
+      
+      
+      </div>
+      
+      
+      <div class=" col-sm-4 col-md  col-6 col">
+      <h5 class="headin5_amrc col_white_amrc pt2">Articles</h5>
+     
+      <ul class="footer_ul_amrc">
+      <li><a href="articles 3.html">Cell Testing</a></li>
+      <li><a href="articles 3.html">Battery Pack Preparations</a></li>
+      <li><a href="articles 3.html">The Charging Station Scenarios</a></li>
+      <li><a href="articles 3.html">Cell Life Cycles</a></li>
+      <li><a href="articles 3.html">Cell voltage Sensors</a></li>
+      <li><a href="articles 3.html">Cell Monitoring Sensors</a></li>
+      </ul>
+      <!--footer_ul_amrc ends here-->
+      </div>
+      
+      
+      <div class=" col-sm-4 col-md  col-6 col">
+      <h5 class="headin5_amrc col_white_amrc pt2">Products</h5>
+      <!--headin5_amrc-->
+      <ul class="footer_ul_amrc">
+      <li><a href="">Battery Packs</a></li>
+      <li><a href="">Low Voltage Battery Packs</a></li>
+      <li><a href="">High Voltage Battery Packs</a></li>
+      <li><a href="">Battery Management System</a></li>
+      <li><a href="">Retrofitting of Vehicles</a></li>
+      <li><a href="">3 Wheeler Battery Packs</a></li>
+      </ul>
+      <!--footer_ul_amrc ends here-->
+      </div>
+      
+      
+      <div class=" col-sm-4 col-md  col-12 col">
+      <h5 class="headin5_amrc col_white_amrc pt2">Follow us</h5>
+      <!--headin5_amrc ends here-->
+      
+      <ul class="footer_ul2_amrc">
+      <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a><p>"Follow us on Midwest Energy for updates."...<a href="http://www.midwestgranite.com/manufacturing-andhrapradesh-granite-pvt-ltd.html">http://www.midwestgranite.com/</a></p></li>
+      <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a><p>"Follow us on Midwest Energy for updates."...<a href="https://midwestenergy.in/#">https://midwestenergy.in/#</a></p></li>
+      <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a><p>"Follow us on Midwest Energy for updates."...<a href="https://midwestenergy.in/#">https://midwestenergy.in/#</a></p></li>
+      </ul>
+      <!--footer_ul2_amrc ends here-->
+      </div>
+      </div>
+      </div>
+      
+      
+      <div class="container">
+      <ul class="foote_bottom_ul_amrc">
+      <li><a href="#line5">Home</a></li>
+      <li><a href="#gallery">About</a></li>
+      <li><a href="">Technologies</a></li>
+      <li><a href="">products</a></li>
+      <li><a href="https://open.spotify.com/episode/2oV0FMrAMEPJkmtNXsJXZI">Blog</a></li>
+      
+      </ul>
+      <!--foote_bottom_ul_amrc ends here-->
+      <p class="text-center">Copyright @2024 | Designed by <a href="#">rajukasulavada1@gmail.com</a></p>
+      
+      <ul class="social_footer_ul">
+      <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+      <li><a href=""><i class="fab fa-twitter"></i></a></li>
+      <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+      <li><a href=""><i class="fab fa-instagram"></i></a></li>
+      </ul>
+      <!--social_footer_ul ends here-->
+      </div>
+      
+      </footer>
+      
+   
+<script>
+  const items = [
+    { name: 'Battery Pack', category: 'battery', url: 'file:///C:/Users/rajuk/OneDrive%20-%20Midwest%20Energy%20Pvt.%20Ltd/Desktop/Midwest%20website/battery_pack_page.html' },
+    { name: 'Controllers', category: 'controller', url: 'controllers_page.html' },
+    { name: 'BMS', category: 'bms', url: 'bms_page.html' },
+    { name: 'BTMS', category: 'btms', url: 'btms_page.html' }
+  ];
+
+  function filterItems(query) {
+    const filteredItems = items.filter(item => item.category.toLowerCase().includes(query.toLowerCase()));
+    return filteredItems;
+  }
+
+  document.getElementById('searchInput').addEventListener('input', function() {
+    const query = this.value;
+    const filteredItems = filterItems(query);
+    displayResults(filteredItems);
+  });
+
+  function displayResults(results) {
+    const searchResults = document.getElementById('searchResults');
+    searchResults.innerHTML = '';
+    if (results.length === 0) {
+      searchResults.textContent = 'No results found.';
+    } else {
+      results.forEach(result => {
+        const itemElement = document.createElement('div');
+        itemElement.classList.add('searchItem');
+        itemElement.textContent = result.name;
+        itemElement.addEventListener('click', function() {
+          window.location.href = result.url;
+        });
+        searchResults.appendChild(itemElement);
+      });
+    }
+  }
+</script>
+
+  
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
   </script>

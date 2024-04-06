@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" id="favicon" href="gallery123.png" type="image/png" >
+  <title>Contact Form & Reviews Section</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+        /*footer*/
+.col_white_amrc { color:white;}
+footer { width:100%; background-color:rgb(35,102,102); min-height:250px; padding:10px 0px 25px 0px ;}
+.pt2 { padding-top:40px ; margin-bottom:20px ;}
+footer p { font-size:13px; color:white; padding-bottom:0px; margin-bottom:8px;}
+.mb10 { padding-bottom:15px ;}
+.footer_ul_amrc { margin:0px ; list-style-type:none ; font-size:14px; padding:0px 0px 10px 0px ; }
+.footer_ul_amrc li {padding:0px 0px 5px 0px;}
+.footer_ul_amrc li a{ color:white;}
+.footer_ul_amrc li a:hover{ color:#fff; text-decoration:none;}
+.fleft { float:left;}
+.padding-right { padding-right:10px; }
+
+.footer_ul2_amrc { list-style-type:none; padding:0px;}
+.footer_ul2_amrc li p { display:table; }
+.footer_ul2_amrc li a:hover { text-decoration:none;}
+.footer_ul2_amrc li i { margin-top:5px;}
+
+.bottom_border { border-bottom:1px solid #323f45; padding-bottom:20px;}
+.foote_bottom_ul_amrc {
+	list-style-type:none;
+	padding:0px;
+	display:table;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-bottom: 10px;
+	margin-left: auto;
+}
+.foote_bottom_ul_amrc li { display:inline;}
+.foote_bottom_ul_amrc li a { color:#999; margin:0 12px;}
+
+.social_footer_ul { display:table; margin:15px auto 0 auto; list-style-type:none;  }
+.social_footer_ul li { padding-left:20px; padding-top:10px; float:left; }
+.social_footer_ul li a { color:#CCC; border:1px solid #CCC; padding:8px;border-radius:50%;}
+.social_footer_ul li i {  width:20px; height:20px; text-align:center;}
+    .dropdown-item {
+  color: #fff;
+}
+
+    .comment-container {
+      margin-top: 20px;
+    }
+    .note {
+      font-size: 14px;
+      color: #6c757d;
+    }
+    
+    .fa-star {
+      color: rgb(244, 98, 44);
+    }
+    .delete-btn {
+      display: none;
+    }
+    /* Popup modal styles */
+    .modal-content {
+      text-align: center;
+    }
+    .celebration {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: 9999;
+      display: none;
+    }
+    .smiley {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      font-size: 24px;
+      pointer-events: none;
+      animation: rain 3s linear infinite;
+    }
+    @keyframes rain {
+      0% {
+        transform: translateY(-100%);
+      }
+      100% {
+        transform: translateY(100vh);
+      }
+    }
+    /* Custom star color and number styles */
+    .rating label {
+      color: orangeyellow; /* Change to your desired orange-yellow mixed color */
+      margin-right: 5px;
+    }
+  </style>
+</head>
+<body style="background-color: whitesmoke;">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-teal" style="background-color: teal;">
+    <a class="navbar-brand" href="contact form final 2.html"><img src="logo.png" alt="" style="height: 45px; width: 200px;"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active" style="color: black;">
+          <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="careers.html"><i class="fas fa-briefcase" style="color: whitesmoke;"></i> Careers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="articles 3.html"><i class="far fa-newspaper" style="color: whitesmoke;"></i> Articles</a>
+        </li>
+      </ul>
+    </div>
+  </nav><br><br><br>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3826.814299109653!2d78.43280428505793!3d17.413138637382957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9723597b76f3%3A0x9caa90f1d9e81bb!2sMidwest%20Granite%20Private%20Limited!5e0!3m2!1sen!2sin!4v1712225284301!5m2!1sen!2sin" width="100%" height="600" style="border:1px 1px 1px solid teal;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+<div class="container">
+  <h1 class="text-center mt-5 mb-4"></h1>
+  
+  <!-- Comment Form -->
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <form id="commentForm">
+        <div class="form-group">
+          <label for="comment" style="font-size: large; font-family: 'Times New Roman', Times, serif;">Leave your comment Regarding Products</label>
+          <textarea class="form-control" id="comment" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="rating">Rate us:</label><br>
+          <div class="rating">
+            <input type="radio" id="star5" name="rating" value="5"><label for="star5" title="5 stars"><i class="fas fa-star"></i> 5</label>
+            <input type="radio" id="star4" name="rating" value="4"><label for="star4" title="4 stars"><i class="fas fa-star"></i> 4</label>
+            <input type="radio" id="star3" name="rating" value="3"><label for="star3" title="3 stars"><i class="fas fa-star"></i> 3</label>
+            <input type="radio" id="star2" name="rating" value="2"><label for="star2" title="2 stars"><i class="fas fa-star"></i> 2</label>
+            <input type="radio" id="star1" name="rating" value="1"><label for="star1" title="1 star"><i class="fas fa-star"></i> 1</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email:</label>
+          <input type="email" class="form-control" id="email">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Comment Section -->
+  <div class="row justify-content-center comment-container">
+    <div class="col-md-8">
+      <div id="comments"></div>
+    </div>
+  </div>
+
+  <!-- Username Section -->
+  <div class="row justify-content-center mt-4" id="username-section" style="display: none;">
+    <div class="col-md-8">
+      <div class="note mb-2">Office use only</div>
+      <div class="form-group">
+        <label for="username">Enter Username:</label>
+        <input type="text" class="form-control" id="username">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Celebration effect - smiley raining -->
+<div class="celebration" id="celebration"></div>
+
+<!-- Popup Modal for thank you message -->
+<div class="modal fade" id="thankYouModal" tabindex="-1" aria-labelledby="thankYouModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <h5 class="modal-title mb-3" id="thankYouModalLabel">Thank you so much for rating us! 😊</h5>
+        <p>Have a good day!</p>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="footer" style="color:rgb(35,102,102);">
+  <div class="container bottom_border">
+  <div class="row">
+  <div class=" col-sm-4 col-md col-sm-4  col-12 col">
+  <h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>
+  <!--headin5_amrc-->
+  <p class="mb10">
+    Midwest Energy: Manufacturer of electric vehicle batteries and BMS systems, ensuring sustainable energy solutions for the automotive industry.</p>
+  <p><i class="fa fa-location-arrow"></i> 9878/25 sec 9 Banjara Hills 35 </p>
+  <p><i class="fa fa-phone"></i>  +91-9999878398  </p>
+  <p><i class="fa fa fa-envelope"></i> info@midwestenergy.in  </p>
+  
+  
+  </div>
+  
+  
+  <div class=" col-sm-4 col-md  col-6 col">
+  <h5 class="headin5_amrc col_white_amrc pt2">Articles</h5>
+ 
+  <ul class="footer_ul_amrc">
+  <li><a href="">Cell Testing</a></li>
+  <li><a href="">Battery Pack Preparations</a></li>
+  <li><a href="">The Charging Station Scenarios</a></li>
+  <li><a href="">Cell Life Cycles</a></li>
+  <li><a href="">Cell voltage Sensors</a></li>
+  <li><a href="">Cell Monitoring Sensors</a></li>
+  </ul>
+  <!--footer_ul_amrc ends here-->
+  </div>
+  
+  
+  <div class=" col-sm-4 col-md  col-6 col">
+  <h5 class="headin5_amrc col_white_amrc pt2">Products</h5>
+  <!--headin5_amrc-->
+  <ul class="footer_ul_amrc">
+  <li><a href="">Battery Packs</a></li>
+  <li><a href="">Low Voltage Battery Packs</a></li>
+  <li><a href="">High Voltage Battery Packs</a></li>
+  <li><a href="">Battery Management System</a></li>
+  <li><a href="">Retrofitting of Vehicles</a></li>
+  <li><a href="">3 Wheeler Battery Packs</a></li>
+  </ul>
+  <!--footer_ul_amrc ends here-->
+  </div>
+  
+  
+  <div class=" col-sm-4 col-md  col-12 col">
+  <h5 class="headin5_amrc col_white_amrc pt2">Follow us</h5>
+  <!--headin5_amrc ends here-->
+  
+  <ul class="footer_ul2_amrc">
+  <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a><p>Lorem Ipsum is simply dummy text of the printing...<a href="http://www.midwestgranite.com/manufacturing-andhrapradesh-granite-pvt-ltd.html">http://www.midwestgranite.com/</a></p></li>
+  <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a><p>Lorem Ipsum is simply dummy text of the printing...<a href="https://midwestenergy.in/#">https://midwestenergy.in/#</a></p></li>
+  <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a><p>Lorem Ipsum is simply dummy text of the printing...<a href="https://midwestenergy.in/#">https://midwestenergy.in/#</a></p></li>
+  </ul>
+  <!--footer_ul2_amrc ends here-->
+  </div>
+  </div>
+  </div>
+  
+  
+  <div class="container">
+  <ul class="foote_bottom_ul_amrc">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="index.html">About</a></li>
+  <li><a href="index.html">Technologies</a></li>
+  <li><a href="index.html">Products</a></li>
+  <li><a href="https://open.spotify.com/episode/2oV0FMrAMEPJkmtNXsJXZI">Blog</a></li>
+ 
+  <!--foote_bottom_ul_amrc ends here-->
+  <p class="text-center">Copyright @2024 | Designed by <a href="#">rajukasulavada1@gmail.com</a></p>
+  
+  <ul class="social_footer_ul">
+  <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+  <li><a href=""><i class="fab fa-twitter"></i></a></li>
+  <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+  <li><a href=""><i class="fab fa-instagram"></i></a></li>
+  </ul>
+  <!--social_footer_ul ends here-->
+  </div>
+  
+  </footer>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+  let clickCount = 0;
+
+  document.addEventListener('click', function(event) {
+    if (event.clientX <= 60) {
+      clickCount++;
+      if (clickCount === 10) {
+        showUsernameSection();
+      }
+    } else {
+      clickCount = 0;
+    }
+  });
+
+  function showUsernameSection() {
+    document.getElementById('username-section').style.display = 'block';
+  }
+
+  // Load comments from local storage
+  document.addEventListener('DOMContentLoaded', function() {
+    var comments = JSON.parse(localStorage.getItem('comments')) || [];
+    displayComments(comments);
+  });
+
+  // Function to display comments
+  function displayComments(comments) {
+    var commentsContainer = document.getElementById('comments');
+    commentsContainer.innerHTML = '';
+    comments.forEach(function(comment, index) {
+      var commentElement = document.createElement('div');
+      commentElement.classList.add('alert', 'alert-secondary', 'mb-2');
+      commentElement.innerHTML = `
+        <div class="rating">${getRatingStars(comment.rating)}</div>
+        <div>${comment.comment}</div>
+        <div class="text-muted mt-1">${comment.email}</div>
+        <button class="delete-btn btn btn-danger btn-sm mt-1" data-index="${index}">Delete</button>
+      `;
+      commentsContainer.appendChild(commentElement);
+    });
+    var username = document.getElementById('username').value.trim();
+    if (username.toLowerCase() === 'raju') {
+      var deleteButtons = document.querySelectorAll('.delete-btn');
+      deleteButtons.forEach(function(button) {
+        button.style.display = 'inline';
+      });
+    }
+  }
+
+  // Get rating stars based on the rating value
+  function getRatingStars(rating) {
+    var starsHtml = '';
+    var fullStars = Math.floor(rating);
+    var halfStar = rating % 1 !== 0;
+    for (var i = 0; i < fullStars; i++) {
+      starsHtml += '<i class="fas fa-star"></i>';
+    }
+    if (halfStar) {
+      starsHtml += '<i class="fas fa-star-half-alt"></i>';
+    }
+    return starsHtml;
+  }
+
+  // Comment Form Submission
+  document.getElementById('commentForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    var commentInput = document.getElementById('comment');
+    var ratingInputs = document.getElementsByName('rating');
+    var emailInput = document.getElementById('email');
+    var commentText = commentInput.value.trim();
+    var rating = 0;
+    for (var i = 0; i < ratingInputs.length; i++) {
+      if (ratingInputs[i].checked) {
+        rating = parseInt(ratingInputs[i].value);
+        break;
+      }
+    }
+    var email = emailInput.value.trim();
+    if (commentText !== '' && rating !== 0 && email !== '') {
+      var comments = JSON.parse(localStorage.getItem('comments')) || [];
+      comments.push({ comment: commentText, rating: rating, email: email });
+      localStorage.setItem('comments', JSON.stringify(comments));
+      displayComments(comments);
+      commentInput.value = '';
+      emailInput.value = '';
+      ratingInputs.forEach(function(input) {
+        input.checked = false;
+      });
+      // Show thank you modal
+      $('#thankYouModal').modal('show');
+      // Show celebration effect
+      showCelebration();
+    } else {
+      alert('Please fill in all fields.');
+    }
+  });
+
+  // Username Input Change Event
+  document.getElementById('username').addEventListener('change', function() {
+    var username = document.getElementById('username').value.trim();
+    var deleteButtons = document.querySelectorAll('.delete-btn');
+    if (username.toLowerCase() === 'raju') {
+      deleteButtons.forEach(function(button) {
+        button.style.display = 'inline';
+      });
+    } else {
+      deleteButtons.forEach(function(button) {
+        button.style.display = 'none';
+      });
+    }
+  });
+
+  // Delete Button Click Event
+  document.addEventListener('click', function(event) {
+    if (event.target.classList.contains('delete-btn')) {
+      var index = parseInt(event.target.getAttribute('data-index'));
+      var comments = JSON.parse(localStorage.getItem('comments')) || [];
+      comments.splice(index, 1);
+      localStorage.setItem('comments', JSON.stringify(comments));
+      displayComments(comments);
+    }
+  });
+
+  // Function to show celebration effect
+  function showCelebration() {
+    var celebrationContainer = document.getElementById('celebration');
+    celebrationContainer.innerHTML = '';
+    for (var i = 0; i < 30; i++) {
+      var smiley = document.createElement('div');
+      smiley.classList.add('smiley');
+      smiley.innerHTML = '😊'; // Use any smiley emoji you want
+      smiley.style.left = Math.random() * 100 + 'vw';
+      celebrationContainer.appendChild(smiley);
+    }
+    celebrationContainer.style.display = 'block';
+    setTimeout(function() {
+      celebrationContainer.style.display = 'none';
+    }, 3000); // Hide celebration effect after 3 seconds
+  }
+</script>
+</body>
+</html>
